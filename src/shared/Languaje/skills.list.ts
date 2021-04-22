@@ -1,0 +1,22 @@
+export const SkillsList = [
+    {
+        title:"Skill1",
+        progress:"10"
+    },
+    {
+        title:"Skill2",
+        progress:"80"
+    },
+    {
+        title:"Skill3",
+        progress:"60"
+    },
+    {
+        title:"Skill4",
+        progress:"70"
+    },
+    {
+        title:"Skill5",
+        progress:"80"
+    },
+]

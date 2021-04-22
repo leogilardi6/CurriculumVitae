@@ -1,0 +1,42 @@
+@import "../../../assets/styles/variables.scss";
+
+.Contact{
+    padding: 8% 4% 4% 4%;
+    color: white;
+    .contact-title{
+        font-size: 1.5rem;
+        padding-bottom: 5%;
+        text-align: right;
+    }
+    .contact-element{
+        display: flex;
+        text-align: right;
+        padding: 1% 0px;
+        .data{
+            width: 80%;
+            .title{
+                font-size: 1rem;
+                color: $font-color;
+            }
+            .content{
+                font-size: 1rem;
+                color: white;
+                margin-bottom: 3%;
+            }
+        }
+        
+        .contact-icon{
+            width: 20%;
+            text-align:center;
+            .contact-icon-element{
+                color : $font-color;
+                font-size: 2rem;
+            }
+        }
+        
+    }
+    .contact-element:last-of-type{
+        margin-bottom: 8%;
+    }
+}
+

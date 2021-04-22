@@ -1,0 +1,180 @@
+@import "../../../assets/styles/variables.scss";
+
+
+// .Main-logo {
+  //   height: 40vmin;
+  //   pointer-events: none;
+  // }
+  .Main{
+    box-shadow: 1px 0px 6px 0px #4a4a4a;
+  }
+  
+  
+  .Main-header {
+    color: $backgroundColor;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    
+    .left-side-bar {
+      min-width: 200px;
+      z-index: 2;
+      &-style{
+        background-color: black;
+      }
+      .photo{
+        height: 300px;
+        background-image: url("../../shared/images/profile.png");
+        background-size: cover;
+        position: relative;
+      }
+    }
+    .main-body{
+      position: relative;
+      &-style{
+        background-color: #d6d6d6;
+      }
+      .name-banner{
+        position: relative;
+        margin: 5% 0px 0px 5%;
+        display: block;
+        height: 196px;
+        text-align: left;
+        .name-content{
+          font-size: 3rem;
+          display: flex;
+          line-height: 4rem;
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+        .profession{
+          background-color: black;
+          color: $font-color;
+          font-size: 2rem;
+          padding: 5px 20px;
+        }
+        .personal-info{
+          text-align: center;
+          padding: 5px 0px;
+          font-size: 1.2rem;
+        }
+      }
+      
+    }
+  }
+  
+  .banner{
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-color-transparent;
+    color: white;
+    text-shadow: 2px 0px $font-shadow-color;
+    &-pprofile{
+      width: 100%;
+      bottom: 0px;
+      position: absolute;
+      .content{
+        text-align: end ;
+        margin-left: 20%;
+        font-size: 2rem;
+        width: 50%;
+      }
+    }
+    &-pdescription{
+      font-size: 1rem;
+      text-align: left;
+      padding: 0px 30px;
+    }
+  }
+  
+  .Main-link {
+    color: #61dafb;
+  }
+
+  .language{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    width: 50px;
+    .Dropdown-control{
+      margin: 3px 6px;
+      .Dropdown-placeholder{
+        font-size: 1.3rem;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .Dropdown-menu{
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      margin-right: 3px;
+      padding: 0px 3px;
+      background-color: $white-transparent;
+      .Dropdown-option{
+        font-size: 1.3rem;
+        color: grey;
+        &:hover{
+          color: black;
+          cursor: pointer;
+        }
+      }
+    }
+    &-flag{
+      width: 20px;
+      height: 15px;
+      margin-top: 5px;
+    }
+  }
+
+  
+@media only screen and (min-width: 992px){
+  .Main-header {
+    .left-side-bar {
+      
+      &-size{
+        width: 30%;
+        min-width:310px;
+      }
+      .photo{
+        height: 450px;
+      }
+    }
+    .main-body{
+      
+      &-size{
+        width: 70%;
+        min-width: 500px;
+      }
+      .name-banner{
+        position: relative;
+        margin: 90px 0px 0px 90px;
+        display: block;
+        height: 235px;
+      }
+      .name-content{
+          font-size: 5rem;
+          display: flex;
+          line-height: 4rem;
+          margin-bottom: 10px;
+          font-weight: 600;
+        }
+    }
+    
+  }
+  .banner{
+    height: 125px;
+     &-pprofile{
+      .content{
+        margin-left: 40%;
+      }
+    }
+    &-pdescription{
+      font-size: 1.3rem;
+    }
+  }
+}

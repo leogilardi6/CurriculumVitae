@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/variables.scss";
+
+
+.ProgressElement{
+    .progressElement-title{
+        color: white;
+        font-size: 1.1rem;
+        text-align: right;
+        padding: 7% 9% 0 0 ;
+    }
+    .content{
+        text-align: right;
+        padding: 8%;
+        font-size: 1.3rem;
+        color: white;
+        .title{
+            margin-bottom: 3%;
+        }
+    }
+    .elem-container{
+        border: 1px solid white;
+        background: transparent;
+        width: 80%;
+        margin: 0% 10%;
+        height: 15px;
+        .progress{
+            background: $font-color;
+            height: 100%;
+        }
+    }
+}
